@@ -1,15 +1,19 @@
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Django Project</title>
-    <link href="{% static 'css/output.css' %}" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
+{% block title %}
+Home
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+
+<section>
     <h1 class="text-3xl font-bold text-center text-blue-600">Welcome to My Django Project</h1>
     <button class="btn btn-primary color">Click Me</button>
-</body>
-</html>
+</section>
+{% endblock %}

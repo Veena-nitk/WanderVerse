@@ -13,7 +13,7 @@ services:
         - wanderv_network
       volumes:
         - ./WanderVerse:/wanderv
-        - "/home/shubhro/Shubhro/NITK/IEEE/Envision 2025/WanderVerse/firebase-key.json:/secrets/firebase-key.json"
+        - ./firebase-key.json:/secrets/firebase-key.json
       env_file:
         - .env
       environment:

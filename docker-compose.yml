@@ -13,7 +13,7 @@ services:
         - wanderv_network
       volumes:
         - ./WanderVerse:/wanderv
-        - ./firebase-key.json:/secrets/firebase-key.json
+        - ./secrets/firebase-key.json:/secrets/firebase-key.json
       env_file:
         - .env
       environment:
